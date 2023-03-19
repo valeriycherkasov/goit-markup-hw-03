@@ -152,6 +152,7 @@ img {
   color: var(--third-text-color);
   max-width: 496px;
   margin: 0 auto;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -167,6 +168,8 @@ img {
   border-radius: 4px;
   display: block;
   margin: 0 auto;
+  border: none;
+  padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -184,6 +187,7 @@ img {
   gap: 24px;
 }
 .features-item {
+  width: calc((100% - 72px) / 4);
 }
 .features-name {
   font-weight: 500;
@@ -191,6 +195,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
 }
 .features-description {
   font-size: 16px;
@@ -201,6 +206,7 @@ img {
 
 /* ==============================GALLERY======================== */
 .gallery {
+  padding-top: 0;
 }
 .gallery-title {
   font-size: 36px;
@@ -216,6 +222,7 @@ img {
   margin-top: 72px;
 }
 .gallery-item {
+  width: calc((100% - 48px) / 3);
 }
 
 /* ==============================OUR TEAM======================== */
@@ -236,6 +243,9 @@ img {
   margin-top: 72px;
 }
 .team-item {
+  width: calc((100% - 72px) / 4);
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   font-weight: 500;
@@ -244,7 +254,13 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
 }
+
+.team-description-item {
+  padding: 32px 16px;
+}
+
 .team-description {
   font-size: 16px;
   line-height: 1.5;
@@ -273,8 +289,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--fourth-text-color);
@@ -286,7 +300,7 @@ img {
 /* ==============================PORTFOLIO======================== */
 .portfolio {
   padding-top: 96px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -295,6 +309,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 .portfolio-item {
 }
@@ -317,16 +332,16 @@ img {
 .portfolio-btn:focus {
   color: var(--third-text-color);
   background-color: var(--second-btn-color);
+  border-color: transparent;
 }
 
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 48px 24px;
 }
 .projects-item {
-  padding-bottom: 48px;
-  border: 1px solid #e7e9fc;
+  width: calc((100% - 48px) / 3);
 }
 
 .projects-link {
@@ -339,7 +354,15 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
 }
+
+.projects-description-item {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .projects-description {
   font-size: 16px;
   line-height: 1.5;
